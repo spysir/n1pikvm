@@ -37,7 +37,7 @@ FDT=/dtb/amlogic/n1.dtb
 ```
 拉取 [fruity-pikvm](https://github.com/jacobbar/fruity-pikvm)
 ```
-git clone https://github.com/jacobbar/fruity-pikvm
+git clone https://github.com/spysir/fruity-pikvm
 ```
 执行 fruity-pikvm 安装脚本
 ```
