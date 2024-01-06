@@ -12,7 +12,7 @@ apt-get update
 ```
 dtc -I dtb -O dts -o n1.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
 ```
-在生成的 dts 文件中搜索
+在生成的 dts 文件中搜索（所生成的dts文件在root目录下）
 ```
 dr_mode = "host";
 ```
