@@ -16,7 +16,7 @@ dtc -I dtb -O dts -o n1.dts /boot/dtb/amlogic/meson-gxl-s905d-phicomm-n1.dtb
 ```
 dr_mode = "host";
 ```
-把 host 模式修改为 peripheral 模式，开启 n1 的 otg 功能。
+把 host 模式修改为 peripheral 模式，开启 n1 的 otg 功能并保存更改
 ```
 peripheral
 ```
@@ -32,7 +32,7 @@ mv n1.dtb /boot/dtb/amlogic/
 ```
 nano /boot/uEnv.txt
 ```
-修改原先的设备树为我们开启了 otg 功能的设备树
+修改原先的设备树为我们开启了 otg 功能的设备树并保存更改
 ```
 FDT=/dtb/amlogic/n1.dtb
 ```
