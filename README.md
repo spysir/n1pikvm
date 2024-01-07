@@ -51,8 +51,8 @@ reboot
 ## 配置 pikvm
 修改 pikvm 账户(admin)的密码，pikvm 访问地址是你 n1 的 ip 地址，默认账户与密码皆是 admin
 ```
-#添加用户 请将silentwind替换为你的用户名
-kvmd-htpasswd set silentwind
+#添加用户 请将fox替换为你的用户名
+kvmd-htpasswd set fox
 #输入密码
 #删除用户
 kvmd-htpasswd del admin
