@@ -51,7 +51,15 @@ reboot
 ## 配置 pikvm
 修改 pikvm 账户(admin)的密码，pikvm 访问地址是你 n1 的 ip 地址，默认账户与密码皆是 admin
 ```
-kvmd-htpasswd set admin
+#添加用户 请将silentwind替换为你的用户名
+kvmd-htpasswd set silentwind
+#输入密码
+#删除用户
+kvmd-htpasswd del admin
+#列出所有用户
+kvmd-htpasswd list
+#重启服务，使修改立刻生效
+systemctl restart kvmd kvmd-nginx
 ```
 删除 /etc/kvmd/override.yaml 中所有内容，修改为以下内容，开启 pikvm 的 Wake on lan 功能，其中 mac 地址填写你被控电脑的 mac 地址，IP 可填可不填，不填时需要删除或者注释该行。
 ```
