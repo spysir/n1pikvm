@@ -54,7 +54,7 @@ reboot
 #添加用户 请将fox替换为你的用户名
 kvmd-htpasswd set fox
 #输入密码
-#删除用户
+#删除默认用户admin
 kvmd-htpasswd del admin
 #列出所有用户
 kvmd-htpasswd list
