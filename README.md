@@ -1,9 +1,9 @@
 # N1 安装 PiKVM
 需要的物料有 n1 一个 ￥90，双公头 USB 数据线 ￥5，MS2109 芯片的采集卡 ￥35。
 系统安装完成后，双公头USB线插靠近HDMI口那个USB口，MS2109采集卡插最边上的那个USB口（不靠近HDMI口那个），所有操作均在root账号下进行
-## 环境
+## 1.安装Armbian
 首先需要给 N1 安装 Armbian，这里推荐[amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian)，教程已经有很多这里不多赘述。
-## 使用 fruity-pikvm 安装 pikvm 并开启 otg 功能
+## 2.开启 otg 功能
 安装完系统第一步肯定是更新
 ```
 apt-get update
@@ -36,7 +36,7 @@ nano /boot/uEnv.txt
 ```
 FDT=/dtb/amlogic/n1.dtb
 ```
-拉取 [fruity-pikvm](https://github.com/jacobbar/fruity-pikvm)
+3.安装fruity-pikvm 拉取 [fruity-pikvm](https://github.com/jacobbar/fruity-pikvm)
 ```
 git clone https://github.com/spysir/fruity-pikvm
 ```
