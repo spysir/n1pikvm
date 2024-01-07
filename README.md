@@ -36,7 +36,7 @@ nano /boot/uEnv.txt
 ```
 FDT=/dtb/amlogic/n1.dtb
 ```
-3.安装fruity-pikvm 拉取 [fruity-pikvm](https://github.com/jacobbar/fruity-pikvm)
+## 3.安装[fruity-pikvm](https://github.com/jacobbar/fruity-pikvm)
 ```
 git clone https://github.com/spysir/fruity-pikvm
 ```
@@ -48,7 +48,7 @@ cd fruity-pikvm && ./install.sh
 ```
 reboot
 ```
-## 配置 pikvm
+## 4.配置 PiKVM
 修改 pikvm 账户密码，pikvm 访问地址是你 n1 的 ip 地址，默认的账户与密码皆是 admin
 ```
 #添加用户 请将fox替换为你的用户名
