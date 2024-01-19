@@ -3,7 +3,7 @@
 系统安装完成后，双公头USB线插靠近HDMI口那个USB口，MS2109采集卡插最边上的那个USB口（不靠近HDMI口那个），所有操作均在root账号下进行
 ## 1.安装Armbian
 首先需要给 N1 安装 Armbian，这里推荐[amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian)，
-已经刷过第三方系统的N1，请使用【N1-ADB U盘启动】工具来开启N1从U盘启动，然后就可以输入armbian-install安装系统到EMMC【U盘要先刷入Armbian系统】
+已经降级过的N1，请使用【N1-ADB U盘启动】工具来开启N1从U盘启动，然后就可以输入armbian-install安装系统到EMMC【U盘要先刷入Armbian系统】
 ## 2.开启 otg 功能
 安装完系统第一步肯定是更新
 ```
