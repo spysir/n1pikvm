@@ -51,15 +51,20 @@ reboot
 ```
 ## 4.配置 PiKVM
 修改 pikvm 账户密码，pikvm 访问地址是你 n1 的 ip 地址，默认的账户与密码皆是 admin
+添加用户 请将fox修改为你的用户名并输入密码
 ```
-#添加用户 请将fox替换为你的用户名
 kvmd-htpasswd set fox
-#输入密码
-#删除默认用户admin
+```
+删除默认用户admin
+```
 kvmd-htpasswd del admin
-#列出所有用户
+```
+列出所有用户
+```
 kvmd-htpasswd list
-#重启服务，使修改立刻生效
+```
+重启服务，使修改立刻生效
+```
 systemctl restart kvmd kvmd-nginx
 ```
 删除 /etc/kvmd/override.yaml 中所有内容，修改为以下内容，开启 pikvm 的 Wake on lan 功能，其中 mac 地址填写你被控电脑的 mac 地址，IP 可填可不填，不填时需要删除或者注释该行。注意缩进，否则服务无法启动
