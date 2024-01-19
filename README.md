@@ -38,6 +38,7 @@ nano /boot/uEnv.txt
 FDT=/dtb/amlogic/n1.dtb
 ```
 ## 3.安装[fruity-pikvm](https://github.com/jacobbar/fruity-pikvm)
+下载 fruity-pikvm 源码
 ```
 git clone https://github.com/spysir/fruity-pikvm
 ```
