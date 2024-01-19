@@ -50,7 +50,8 @@ cd fruity-pikvm && ./install.sh
 reboot
 ```
 ## 4.配置 PiKVM
-修改 pikvm 账户密码，pikvm 访问地址是你 n1 的 ip 地址，默认的账户与密码皆是 admin
+pikvm 访问地址是你 n1 的 ip 地址，默认的账户与密码皆是 admin
+
 添加用户 请将fox修改为你的用户名并输入密码
 ```
 kvmd-htpasswd set fox
