@@ -89,9 +89,9 @@ kvmd:
                 switch: false    
         view:    
             header:      
-                title: 网络唤醒
+                title: WOL
             table:    
-                - ["#PC", "wol_1|唤醒"]    
+                - ["#PC", "wol_1|WOL"]    
 ```
 重启 pikvm 服务
 ```
